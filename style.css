@@ -1,0 +1,437 @@
+/* Common styles */
+body {
+  color: white;
+  font-family: Montserrat;
+  margin: 0;
+  padding: 0;
+
+    overflow: hidden;
+
+
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+/* ------------------------------------------Navbar Styles ------------------------------------------------------*/
+
+/*----------------- Flex styles ---------------- */
+
+.container{
+  padding: 0 3rem;
+  background-color:#0c1027;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #0c1027;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.navbar-left , .navbar-logo , .navbar-right{
+  display: flex;
+  align-items: center;
+}
+.navbar-title{
+  display:flex;
+  flex-direction: column;
+}
+
+.navbar-right{
+  width:50%;
+  justify-content: space-between;
+}
+/* --------------- Font styles ---------------- */
+.navbar-left > * , .navbar-right > *{
+  padding: 0 2rem;
+}
+.navbar-title{
+  font-size: 2rem;
+}
+
+#logo-text{
+  font-weight: bold;
+}
+
+.navbar-right input{
+  border-radius: 2rem;
+  padding:0.5rem;
+  flex-grow:1;
+}
+/* ----------------- Image styles --------------- */
+.navbar-logo > img , .navbar-right > img {
+  height:70px;
+  width:70px;
+}
+
+.navbar-right > img{
+  border-radius: 50%;
+}
+
+/*-------------------------------------------------------------Content styles-----------------------------------------*/
+/*----------------- Flex styles ---------------- */
+.content{
+  background-color: #0c1027;
+  display: flex;
+  width: 100%;
+
+  /* padding-top:  */
+}
+/* --------------- Font styles ---------------- */
+.content > *{
+  padding: 1rem 1rem;
+}
+
+
+/*-------------------------------------------------------------Main content styles-----------------------------------------*/
+/*----------------- Flex styles ---------------- */
+.main{
+  height:85vh;
+  width:180vw;
+  overflow: scroll;
+
+}
+
+.secondary{
+  height: 85vh;
+  overflow: auto;
+}
+
+.card-holder{
+  display: flex;
+  width: 100%;
+}
+
+.card-details, .playlist{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-details-title, .playlist-song, .playlist-song-title,.playlist-song-icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-details-title{
+  flex-wrap: wrap;
+}
+.card-details-button{
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel{
+  display: flex;
+  align-items: center;
+  flex-wrap:wrap;
+}
+.latest-release-songs{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.latest-song-details{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+     width:50%;
+    box-sizing: border-box;
+}
+.latest-song-button{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artists-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 0.5rem;
+}
+.artist{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.latest-collection{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* --------------- Font styles ---------------- */
+
+.main > *{
+  margin: 1rem 0;
+}
+
+.playlist, .latest-hindi,.artist-list{
+  padding-bottom: 5rem;
+}
+
+.card-holder{
+  background-color: #141B41;
+}
+.playlist-song{
+  background-color: #141B41;
+    margin:  0.5rem 0;
+}
+
+.playlist-song:hover{
+  background-color: #080808;
+}
+
+.card-details > * ,.playlist-song-title > *, .playlist-song-icon > *{
+  padding: 0 1rem;
+}
+
+.card-details-button input  {
+  background-color: purple;
+  border: none;
+  padding: 1rem;
+  color:white;
+  border-radius: 1rem;
+}
+
+.card-details-button input:hover  {
+  background-color: black;
+  cursor: pointer;
+
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.latest-collection-song,.latest-english, .latest-hindi{
+  padding-top: 1rem;
+}
+
+.latest-collection-song > p{
+  padding: 0;
+  margin: 0;
+}
+
+.title{
+  font-weight: 400;
+}
+
+/* ----------------- Image styles --------------- */
+.card-holder img{
+  height: 300px;
+  width:300px;
+}
+
+.playlist-song-title img{
+  height: 50px;
+  width: 50px;
+}
+
+.carousel img{
+  transition: transform 1s;
+  padding: 1rem 1rem;
+
+}
+
+.carousel img:hover{
+  transform: scale(1.19);
+}
+
+.latest-song-details img{
+    height: 70px;
+    width: 70px;
+}
+
+.artist img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+
+.latest-collection-song img{
+  height: 100px;
+  width: 100px;
+}
+
+/*-------------------------------------------------------------Secondary content styles-----------------------------------------*/
+/*----------------- Flex styles ---------------- */
+.secondary{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
+
+}
+.secondary-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.artist-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.artist-name, .artist-detail-button{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+/* --------------- Font styles ---------------- */
+
+.artist-details img{
+    height: 70px;
+    width: 70px;
+}
+
+.subtext{
+  color:grey;
+}
+/* --------------- Font styles ---------------- */
+
+
+/*-------------------------------------------------------------Footer styles-----------------------------------------*/
+/*----------------- Flex styles ---------------- */
+.footer{
+  background-color: #282828;
+  position: fixed;
+  bottom:0px;
+  width: 100%;
+}
+
+.footer-container{
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.now-playing {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.now-playing-title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+}
+
+.progress-bar-slider {
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar-sound{
+  display: flex;
+  align-items: center;
+}
+
+/* --------------- Font styles ---------------- */
+.progress-bar-controls {
+  font-size: 2rem;
+}
+.now-playing > *{
+  padding: 0 0.5rem;
+}
+.footer-container > *{
+  padding: 0 2rem;
+}
+
+/* --------------- Image styles ---------------- */
+.now-playing img{
+  height: 70px;
+  width: 70px;
+}
+
+
+/* Responsive design */
+@media only screen and (max-width: 1024px) {
+  .secondary{
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .secondary{
+    display: none;
+  }
+  .navbar-left > * , .navbar-right > *{
+    padding: 0 1rem;
+  }
+  .carousel, .latest-release-songs{
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .latest-song-details{
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  .latest-collection{
+    flex-wrap: wrap;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .secondary,.navbar-right{
+    display: none;
+  }
+  .carousel, .latest-release-songs,.playlist{
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .latest-song-details,.playlist-song,.playlist-song-title{
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  .navbar-left{
+    width: 100%;
+    justify-content: space-around;
+  }
+  .container,.navbar-left > *{
+    padding: 0;
+  }
+
+
+  .footer-container{
+    transform: scale(0.45);
+  }
+  .card-holder,.playlist-song-icon{
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+
+.playlist-song-icon > *{
+  padding: 0.2rem 0;
+}
+  .card-holder img{
+    width:100%;
+  }
+
+}
